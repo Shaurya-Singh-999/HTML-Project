@@ -1,0 +1,218 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(240, 248, 255);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    color: rgb(28, 28, 193);
+}
+
+a, p, span, li, button, input, textarea {
+    font-family: Calibri, sans-serif;
+}
+
+.dark-mode {
+    background-color: rgb(47, 79, 79);
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: rgb(135, 206, 250);
+}
+
+.top-nav {
+    background-color: rgb(28, 28, 193);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.dark-mode .top-nav {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(135, 206, 250);
+}
+
+.top-nav h2 {
+    display: inline-block;
+    margin-right: 20px;
+    color: rgb(135, 206, 250);
+}
+
+.top-nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.top-nav a:hover {
+    color: rgb(135, 206, 250);
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: rgb(135, 206, 250);
+    border: 1px solid rgb(135, 206, 250);
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-btn:hover {
+    background-color: rgb(135, 206, 250);
+    color: rgb(28, 28, 193);
+}
+
+.header-box {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.highlight {
+    color: rgb(30, 144, 255);
+}
+
+.dark-mode .highlight {
+    color: rgb(135, 206, 250);
+}
+
+.big-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    background-color: rgb(30, 144, 255);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid rgb(30, 144, 255);
+    cursor: pointer;
+}
+
+.alt-btn {
+    background-color: transparent;
+    color: rgb(30, 144, 255);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid rgb(30, 144, 255);
+    cursor: pointer;
+}
+
+.dark-mode .main-btn {
+    background-color: rgb(135, 206, 250);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(135, 206, 250);
+}
+
+.dark-mode .alt-btn {
+    background-color: transparent;
+    color: rgb(135, 206, 250);
+    border: 2px solid rgb(135, 206, 250);
+}
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.content-box {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 130, 180);
+    padding: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.dark-mode .content-box {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(135, 206, 250);
+    color: rgb(255, 255, 255);
+}
+
+.skill-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.link-text {
+    color: rgb(30, 144, 255);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dark-mode .link-text {
+    color: rgb(135, 206, 250);
+}
+
+.contact-wrap {
+    text-align: center;
+}
+
+.half-box {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgb(70, 130, 180);
+}
+
+.dark-mode .input-field {
+    border: 1px solid rgb(135, 206, 250);
+    background-color: rgb(47, 79, 79);
+    color: rgb(255, 255, 255);
+}
+
+.err-text {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+.succ-text {
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+}
+
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 130, 180);
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.dark-mode .modal-content {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(135, 206, 250);
+}

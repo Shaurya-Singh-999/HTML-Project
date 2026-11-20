@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shaurya Singh - Portfolio</title>
+    <link rel="stylesheet" href="PortfolioCSS.css">
+</head>
+<body>
+
+    <div class="top-nav">
+        <h2>&lt;Shaurya Singh&gt;</h2>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" onclick="toggleTheme()" class="nav-btn">Dark Mode</button>
+        <button onclick="showResume()" class="nav-btn">Resume</button>
+    </div>
+
+    <div id="home" class="header-box">
+        <h1>Hi, I'm <span class="highlight">Shaurya Singh</span></h1>
+        <p class="big-text">1st year student at KIET(Deemed to be university). I love building websites and doing competitive programming.</p>
+        <br>
+        <a href="#projects" class="main-btn">Explore Projects</a>
+        <a href="#contact" class="alt-btn">Get In Touch</a>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <div class="content-box">
+            <p>Hi, I'm Shaurya Singh, a first-year Computer Science student at KIET with a focus on web development and cloud technologies. I enjoy turning ideas into clean, responsive websites using HTML, CSS, and JavaScript, while actively expanding my skills in C++ and AWS cloud architecture. Outside of coursework and building web projects, I practice competitive programming to sharpen my problem-solving abilities.</p>
+        </div>
+    </div>
+
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="content-box">
+            <div class="skill-item">
+                <h3>Programming Languages</h3>
+                <p>C++, Python, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <h3>Databases</h3>
+                <p>MySQL</p>
+            </div>
+            <div class="skill-item">
+                <h3>Tools & Cloud</h3>
+                <p>Git, GitHub, VS Code, AWS</p>
+            </div>
+            <div class="skill-item">
+                <h3>Competitive Programming</h3>
+                <p>Leetcode rating: 1000</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="content-box">
+            <ul>
+                <li>Built and deployed a basic mysql database with python connectivity for my school project.</li>
+                <li>Built and deployed responsive web applications, including personal portfolio website and a basic interactive online learning platform using html, CSS and JS.</li>
+                <li>Regularly solve algorithmic and data structure challenges in C++ to improve my coding and problem solving skills.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="content-box">
+            <h3>Online Learning Platform</h3>
+            <p>A responsive front-end educational dashboard built with HTML, CSS, and JavaScript featuring course tracking, simulated progress bars, and dynamic filtering.</p>
+        </div>
+    </div>
+
+    <div id="github" class="section">
+        <h2>GitHub</h2>
+        <div class="content-box">
+            <p>Check out my code repositories and latest deployments:</p>
+            <a href="https://github.com/Shaurya-Singh-999" target="_blank" class="link-text">github.com/Shaurya-Singh-999</a>
+        </div>
+    </div>
+
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <div class="content-box">
+            <ul>
+                <li>
+                    <h3>College</h3>
+                    <p>KIET (Deemed to be University)</p>
+                </li>
+                <li>
+                    <h3>4th grade - 12th Grade</h3>
+                    <p>Delhi Public School, Gautam Buddha Nagar</p>
+                </li>
+                <li>
+                    <h3>Nursery to 3rd grade</h3>
+                    <p>The Indian Heights School, Dwarka</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="contact-wrap">
+            <div class="content-box half-box">
+                <h3>Get in Touch</h3>
+                <p><strong>Phone Number:</strong> 9654824017</p>
+                <p><strong>Email Id:</strong> officialshauryasingh999@gmail.com</p>
+            </div>
+            
+            <div class="content-box half-box">
+                <form id="contactForm" onsubmit="validateForm(event)">
+                    <input type="text" id="name" placeholder="Your Name" class="input-field"><br><br>
+                    <input type="text" id="email" placeholder="Your Email" class="input-field"><br><br>
+                    <textarea id="message" rows="4" placeholder="Your Message" class="input-field"></textarea><br><br>
+                    <p id="formError" class="err-text"></p>
+                    <p id="formSuccess" class="succ-text"></p>
+                    <button type="submit" class="main-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="resumeModal" class="modal-bg">
+        <div class="modal-content">
+            <h2>My Resume</h2>
+            <iframe src="Shaurya Singh - Resume.pdf" width="100%" height="450px" style="border: none;"></iframe>
+            <br><br>
+            <button class="alt-btn" onclick="hideResume()">Close</button>
+        </div>
+    </div>
+
+    <script src="PortfolioJS.js"></script>
+</body>
+</html>
